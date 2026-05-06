@@ -1,0 +1,85 @@
+# micro-powerline by Anders Kusk
+# https://github.com/kusk/micro-powerline
+
+# Dark colorscheme designed for the powerline.lua plugin.
+# Palette: Dracula (https://draculatheme.com)
+# Requires a true-color terminal (COLORTERM=truecolor).
+#
+# Install: copy to ~/.config/micro/colorschemes/powerline-dark.micro
+# Activate: micro> set colorscheme powerline-dark
+
+# ── Base ──────────────────────────────────────────────────────────────────────
+color-link default              "#f8f8f2,#282a36"
+
+# ── Syntax ────────────────────────────────────────────────────────────────────
+color-link comment              "italic #6272a4"
+color-link identifier           "#8be9fd"
+color-link constant             "#bd93f9"
+color-link special              "#ffb86c"
+color-link statement            "#ff79c6"
+color-link preproc              "#ff79c6"
+color-link type                 "#8be9fd"
+color-link underlined           "underline #8be9fd"
+color-link error                "bold #ff5555"
+color-link todo                 "bold #ffb86c"
+color-link string               "#f1fa8c"
+color-link stringdelimiter      "#f1fa8c"
+
+# ── Editor chrome ─────────────────────────────────────────────────────────────
+color-link cursor-line          "#444444,#44475a"
+color-link highlightline        ",#44475a"
+color-link selection            "#f8f8f8,#44475a"
+color-link match-brace          ",#6272a4"
+color-link trailingws           ",#ff5555"
+color-link indent-char          "#44475a,#282a36"
+
+# ── Gutter / line numbers ─────────────────────────────────────────────────────
+color-link line-number          "#6272a4,#282a36"
+color-link current-line-number  "bold #ff80bf,#282a36"
+color-link gutter-error         "bold #ff5555,#282a36"
+color-link gutter-warning       "bold #ffb86c,#282a36"
+
+# ── Tabs / splits ─────────────────────────────────────────────────────────────
+color-link divider              "#6272a4,#282a36"
+color-link tabbar               "#6272a4,#21222c"
+color-link tabbar.active        "bold #f8f8f2,#282a36"
+
+# ── Statusline ────────────────────────────────────────────────────────────────
+# The fill area (between left and right segment clusters) uses the base style.
+color-link statusline           "#f8f8f2,#282a36"
+color-link statusline.inactive  "#6272a4,#282a36"
+
+# ── Powerline plugin segments ─────────────────────────────────────────────────
+# Dracula palette reference:
+#   #282a36 background (darkest)   #44475a current-line / selection
+#   #6272a4 comment (blue-grey)    #f8f8f2 foreground
+#   #bd93f9 purple                 #8be9fd cyan
+#
+# LEFT SEGMENTS  (fg text, bg background)
+color-link powerline.seg1       "#282a36,#bd93f9"   # filename  : dark text on purple
+color-link powerline.seg2       "#f8f8f2,#44475a"   # line:col  : fg on current-line
+color-link powerline.seg3       "#f8f8f2,#6272a4"   # branch    : fg on comment
+#
+# LEFT SEPARATORS — rule: fg = left-segment bg, bg = right-segment bg
+color-link powerline.sep1       "#bd93f9,#44475a"   # seg1 -> seg2
+color-link powerline.sep2       "#44475a,#6272a4"   # seg2 -> seg3
+color-link powerline.sep3       "#6272a4,#282a36"   # seg3 -> fill
+#
+# RIGHT SEGMENTS
+color-link powerline.rseg1      "#f8f8f2,#6272a4"   # pct/enc/fmt : fg on comment
+color-link powerline.rseg2      "#f8f8f2,#44475a"   # filetype    : fg on current-line
+color-link powerline.rseg3      "#f8f8f2,#6272a4"
+color-link powerline.rseg4      "#f8f8f8,#6272a4"
+color-link powerline.rseg5      "#f8f8f8,#44475a"
+color-link powerline.rseg6      "#282a36,#8aff80"
+#
+# RIGHT SEPARATORS — rule: fg = segment-to-the-left bg, bg = segment-to-the-right bg
+# (left/right here refers to screen position, not format-string position)
+color-link powerline.rsep1      "#44475a,"   # fill   -> rseg1
+color-link powerline.rsep2      "#6272a4,#44475a"   # rseg1  -> rseg2
+color-link powerline.rsep3      "#44475a,#6272a4"
+color-link powerline.rsep4      "#8aff80,#44475a"
+# ── Diff ──────────────────────────────────────────────────────────────────────
+color-link diff-added           "#50fa7b"
+color-link diff-removed         "#ff5555"
+color-link diff-modified        "#ffb86c"
