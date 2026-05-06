@@ -1,5 +1,5 @@
 # micro-powerline
-A powerline patch, plugin and colorscheme for the Micro Editor
+A powerline patch, plugin and colorscheme for the Micro Editor [Micro Editor](https://duckduckgo.com](https://github.com/micro-editor/micro).
 
 This will patch will work for 2.0.16-dev.44 version of Micro pulled from github. The patch will only patch statusline.go and add the ability to have multiple colors and segments in the statusline.
 
