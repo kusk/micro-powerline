@@ -13,4 +13,6 @@ Pull this repo and place the files into the micro directory.
 Then run install.sh which will patch statusline.go and copy plugin and colorscheme to the correct directories.
 After that you run "make build" in the micro directory and compiled the patched version.
 
+I have also included an example settings.json
+
 ![Screenshot](screenshot.png)
