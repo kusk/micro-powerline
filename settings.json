@@ -5,7 +5,5 @@
     "mkparents": true,
     "scrollbar": true,
     "softwrap": true,
-    "statusformatl": "$(#powerline.seg1) $(filename) $(modified)$(overwrite)$(status.paste)$(#powerline.sep1)$(#powerline.seg2) $(line):$(col) $(#powerline.sep2)$(#powerline.seg3) $(powerline.branch) $(#powerline.sep3)$(#)",
-    "statusformatr": "$(#powerline.rsep4)$(#powerline.rseg2) $(percentage)%  $(opt:encoding)  $(opt:fileformat) $(#powerline.rsep3)$(#powerline.rseg2) $(opt:filetype) ",
     "tabstospaces": true
 }
